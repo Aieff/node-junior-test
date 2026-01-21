@@ -6,7 +6,7 @@ const router = Router();
 
 /**
  * @swagger
- * /tasks:
+ * /task:
  *   post:
  *     summary: Criar uma nova tarefa
  *     tags: [Tasks]
@@ -39,7 +39,7 @@ router.post("/", auth, createTask);
 
 /**
  * @swagger
- * /tasks:
+ * /task:
  *   get:
  *     summary: Listar tarefas do usuário autenticado
  *     tags: [Tasks]
@@ -68,7 +68,7 @@ router.get("/", auth, listTasks);
 
 /**
  * @swagger
- * /tasks/{id}:
+ * /task/{id}:
  *   get:
  *     summary: Buscar uma tarefa pelo ID
  *     tags: [Tasks]
@@ -93,7 +93,7 @@ router.get("/:id", auth, listOneTask);
 
 /**
  * @swagger
- * /tasks/{id}:
+ * /task/{id}:
  *   put:
  *     summary: Atualizar uma tarefa
  *     tags: [Tasks]
@@ -129,7 +129,7 @@ router.put("/:id", auth, updateTask);
 
 /**
  * @swagger
- * /tasks/{id}:
+ * /task/{id}:
  *   delete:
  *     summary: Deletar uma tarefa
  *     tags: [Tasks]
